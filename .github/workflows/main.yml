@@ -27,7 +27,7 @@ jobs:
                                 	
                         - name: package release
                           env:
-                                  NPM_ACCESS_TOKEN: ${{secrets.NPM_ACCESS_TOKEN}}
+                                  NPM_TOKEN: ${{secrets.NPM_ACCESS_TOKEN}}
                                   GH_TOKEN: ${{secrets.GH_TOKEN}}
                           run: npx semantic-release
                   
