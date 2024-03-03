@@ -1,7 +1,7 @@
 {
-  "name": "@squadx-developer/test-library",
+  "name": "@bebusl/test-library",
   "private": false,
-  "version": "0.0.1",
+  "version": "0.0.3",
   "type": "module",
   "files": [
     "dist"
@@ -21,9 +21,12 @@
       "require": "./dist/util/index.cjs.js"
     }
   },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "tsc && vite build",
-    "publish": "npm publish",
+    "publish": "npm publish --access public",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "storybook": "VITE_CJS_IGNORE_WARNING=true storybook dev -p 6006",
     "build-storybook": "storybook build"
