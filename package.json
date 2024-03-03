@@ -24,6 +24,22 @@
   "publishConfig": {
     "access": "public"
   },
+  "release": {
+    "branches": [
+      "+([0-9])?(.{+([0-9]),x}).x",
+      "prod",
+      "next",
+      "next-major",
+      {
+        "name": "beta",
+        "prerelease": true
+      },
+      {
+        "name": "alpha",
+        "prerelease": true
+      }
+    ]
+  },
   "scripts": {
     "build": "tsc && vite build",
     "publish": "npm publish --access public",
