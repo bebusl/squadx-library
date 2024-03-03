@@ -22,14 +22,14 @@ jobs:
                         - name: install sementic-release
                           run: npm i semantic-release
                                 	
-                        - npm: build
+                        - name: build
                           run: npm run build
                                 	
-                        - npm: publish to npmjs
+                        - name: publish to npmjs
                           run: npm run publish
                                 	
-                        - npm: package release
+                        - name: package release
                           env:
-                          NPM_ACCESS_TOKEN: ${{secrets.NPM_ACCESS_TOKEN}}
-                  run: npx semantic-release
+                                  NPM_ACCESS_TOKEN: ${{secrets.NPM_ACCESS_TOKEN}}
+                          run: npx semantic-release
                   
