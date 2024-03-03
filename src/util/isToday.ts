@@ -12,3 +12,10 @@ export function isToday(date: Date): boolean {
     date.getFullYear() === today.getFullYear()
   );
 }
+
+/**
+ * CD 확인용
+ */
+export function justTest():boolean{
+  return true;
+}
