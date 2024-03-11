@@ -2,7 +2,7 @@ name: publish ui package
 
 on:
         push:
-                branches: ["prod"]
+                branches: ["prod", "beta"]
 
 jobs:
         build:
