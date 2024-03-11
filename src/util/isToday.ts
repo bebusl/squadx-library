@@ -22,5 +22,5 @@ export function justTest():boolean{
 }
 
 export function wtf():boolean{
-  return false;
+  return true;
 }
