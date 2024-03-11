@@ -6,6 +6,7 @@
  */
 export function isToday(date: Date): boolean {
   const today = new Date();
+  console.log("WHY RUN IT TWICE");
   return (
     date.getDate() === today.getDate() &&
     date.getMonth() === today.getMonth() &&
