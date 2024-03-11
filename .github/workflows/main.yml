@@ -29,5 +29,6 @@ jobs:
                           env:
                                   NPM_TOKEN: ${{secrets.NPM_ACCESS_TOKEN}}
                                   GH_TOKEN: ${{secrets.GH_TOKEN}}
+                                  CI: true
                           run: npx semantic-release
                   
