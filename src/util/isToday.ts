@@ -6,7 +6,7 @@
  */
 export function isToday(date: Date): boolean {
   const today = new Date();
-  console.log("beta test TEST");
+  console.log("beta :: new feature");
   return (
     date.getDate() === today.getDate() &&
     date.getMonth() === today.getMonth() &&
