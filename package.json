@@ -42,7 +42,6 @@
   },
   "scripts": {
     "build": "tsc && vite build",
-    "publish": "npm publish --access public",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "storybook": "VITE_CJS_IGNORE_WARNING=true storybook dev -p 6006",
     "build-storybook": "storybook build"
